@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nischal Subedi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nischal Subedi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.JPG" alt="Nischal Subedi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nischal Subedi</h1>
+        <p class="section__text__p2">MS Data Science Student | Full-Stack Developer | Machine Learning & Data Analysis Enthusiast</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Nischal_Subedi_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nischal-subedi-49219b242/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/nsube'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2021-2024 <br />Full-Stack Developer & Web Optimization <br />API Himal Treks & Expedition Pvt. Ltd., Kathmandu, Nepal <br /> <br /> 
+               2022 <br />Backend Developer Intern <br />PL Multimedia Service Pvt. Ltd., Chitwan, Nepal <br /></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Hons Computing <br /> London Metropolitan University ▪ London, United Kingdom <br /> December 2023<br /><br />M.Sc. Data Science <br />Tagliatela College of Engineering <br />University of New Haven ▪ West Haven, CT <br /> May 2026</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a Full-Stack Developer with expertise in Laravel, WordPress, MySQL, and backend optimization. Passionate about creating efficient, user-friendly, and scalable web solutions, I specialize in enhancing website performance, managing databases, and implementing seamless user experiences. With hands-on experience in full-stack development, backend integration, and API implementation, I have worked on optimizing business operations, managing customer interactions, and improving website engagement. My goal is to build innovative and high-performing digital solutions that drive growth and user satisfaction. I am always eager to learn, adapt, and explore new technologies in the ever-evolving world of Data & AI. Feel free to explore my projects and connect with me!
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/kickoff-time.png"
+                alt="KickOff Time"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">KickOff Time – Futsal Booking Portal</h2>
+            <p>A web-based futsal booking system built using the MERN stack to streamline reservations and enhance user experience.</p>
+            <!--
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            -->
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pl-multimedia.png"
+                alt="PL Multimedia"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">PL Multimedia Official Web Application</h2>
+            <p>Backend development of an official multimedia service application using the MERN stack and MySQL for data security.</p>
+            <!--
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            -->
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/car-rental.png"
+                alt="Car Rental System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Car Rental System</h2>
+            <p>A .NET-based web application that allows users to rent, check, and return cars efficiently.</p>
+<!--             
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            -->
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/movie-recommendation.png"
+                alt="Movie Recommendation System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Recommendation System</h2>
+            <p>A machine learning project utilizing collaborative filtering to suggest personalized movie recommendations based on user preferences.</p>
+            <!--
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Software Development -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Data Science & AI -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Science & AI</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Data Visualization</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Collaborative Filtering</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Predictive Analytics</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Data Cleaning & Preprocessing</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:nsube2@unh.newhaven.edu">nsube2@unh.newhaven.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/nischal-subedi-49219b242/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Nischal Subedi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <a href="#" id="back-to-top">
+      &#8679;
+    </a>
+  </body>
+</html>
